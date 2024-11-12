@@ -1,0 +1,38 @@
+*{
+    margin: 0 auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+    "header header"
+    "sidebar main ";
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: span 2;
+    background-color: purple;
+
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.main{
+    grid-area: main;
+}
